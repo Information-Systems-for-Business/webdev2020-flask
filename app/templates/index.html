@@ -1,3 +1,9 @@
-<!doctype  html>
-<title>Belajar MVC Flask</title>
-<h1>Hello {{ nama }}!</h1>
+{% extends 'master.html' %}
+
+{% block header %}
+  <h1>{% block title %}MVC{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h6>Hello {{ nama }}!</h6>
+{% endblock %}
